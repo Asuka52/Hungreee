@@ -9,6 +9,7 @@
 import UIKit
 import MDCSwipeToChoose
 import RKNotificationHub
+import GoogleMobileAds
 
 class ChooseItemViewController: UIViewController, MDCSwipeToChooseDelegate {
     
@@ -23,6 +24,7 @@ class ChooseItemViewController: UIViewController, MDCSwipeToChooseDelegate {
     @IBOutlet weak var homeButton: UIImageView!
     @IBOutlet weak var nopeBackgroundImabeView: CircleImageView!
     @IBOutlet weak var likeBackgroundImabeView: CircleImageView!
+    @IBOutlet weak var bannerView: GADBannerView!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -36,6 +38,10 @@ class ChooseItemViewController: UIViewController, MDCSwipeToChooseDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        self.bannerView.rootViewController = self
+        self.bannerView.loadRequest(GADRequest())
         
         //show everytime
         let welcomeVc = WelcomeViewController()

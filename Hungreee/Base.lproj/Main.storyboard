@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6cx-qq-9cf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6cx-qq-9cf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QcG-gD-Dt7" userLabel="Nope Button Background" customClass="CircleImageView" customModule="Hungreee" customModuleProvider="target">
-                                <rect key="frame" x="182" y="480" width="104" height="104"/>
+                                <rect key="frame" x="182" y="404" width="104" height="104"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QcG-gD-Dt7" secondAttribute="height" multiplier="1:1" id="gSg-nS-qFi"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tb2-qF-hRE" userLabel="Nope Button">
-                                <rect key="frame" x="190" y="488" width="88" height="88"/>
+                                <rect key="frame" x="190" y="412" width="88" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="BJU-nG-4dc"/>
                                     <constraint firstAttribute="width" secondItem="Tb2-qF-hRE" secondAttribute="height" multiplier="1:1" id="DiY-04-wl2"/>
@@ -40,14 +40,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dEP-Hm-7Dk" userLabel="Like Button Background" customClass="CircleImageView" customModule="Hungreee" customModuleProvider="target">
-                                <rect key="frame" x="314" y="480" width="104" height="104"/>
+                                <rect key="frame" x="314" y="404" width="104" height="104"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dEP-Hm-7Dk" secondAttribute="height" multiplier="1:1" id="uUn-jg-994"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fc7-C1-Wm3" userLabel="Like Button">
-                                <rect key="frame" x="322" y="488" width="88" height="88"/>
+                                <rect key="frame" x="322" y="412" width="88" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="BbJ-YV-2an"/>
                                     <constraint firstAttribute="width" secondItem="Fc7-C1-Wm3" secondAttribute="height" multiplier="1:1" id="ktu-3q-8eC"/>
@@ -75,15 +75,25 @@
                                     <constraint firstAttribute="width" constant="40" id="W3S-H0-UMK"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEN-vt-ZBe" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.16219594009999999" green="1" blue="0.81624361479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="heK-pX-6uC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.94509803920000002" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PEN-vt-ZBe" secondAttribute="trailing" id="1Fk-yG-MQo"/>
+                            <constraint firstItem="PEN-vt-ZBe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="CDp-DR-mpm"/>
                             <constraint firstAttribute="centerY" secondItem="yjw-Yu-SxB" secondAttribute="centerY" id="EcK-7K-xFV"/>
                             <constraint firstItem="Fc7-C1-Wm3" firstAttribute="centerY" secondItem="Tb2-qF-hRE" secondAttribute="centerY" id="F3U-gg-QSU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5c7-Cc-WB6" secondAttribute="trailing" constant="16" id="Grl-me-WNj"/>
                             <constraint firstItem="dEP-Hm-7Dk" firstAttribute="width" secondItem="Fc7-C1-Wm3" secondAttribute="width" constant="16" id="Gw2-8T-Lb8"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Tb2-qF-hRE" secondAttribute="bottom" constant="24" id="HhG-tY-i0p"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Tb2-qF-hRE" secondAttribute="bottom" constant="100" id="HhG-tY-i0p"/>
                             <constraint firstItem="Tb2-qF-hRE" firstAttribute="centerY" secondItem="QcG-gD-Dt7" secondAttribute="centerY" id="Hki-Mw-qOO"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="PEN-vt-ZBe" secondAttribute="bottom" id="OFQ-Jv-Bnk"/>
                             <constraint firstItem="Tb2-qF-hRE" firstAttribute="width" secondItem="QcG-gD-Dt7" secondAttribute="width" constant="-16" id="Pik-qf-4uq"/>
                             <constraint firstAttribute="centerX" secondItem="Tb2-qF-hRE" secondAttribute="centerX" constant="66" id="QCs-cZ-Wfi"/>
                             <constraint firstItem="dEP-Hm-7Dk" firstAttribute="centerY" secondItem="Fc7-C1-Wm3" secondAttribute="centerY" id="hO2-QB-WWF"/>
@@ -96,6 +106,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="1vC-uz-gjm"/>
                     <connections>
+                        <outlet property="bannerView" destination="PEN-vt-ZBe" id="isH-FF-zow"/>
                         <outlet property="homeButton" destination="5c7-Cc-WB6" id="s0e-ee-5er"/>
                         <outlet property="likeBackgroundImabeView" destination="dEP-Hm-7Dk" id="q85-ni-Li2"/>
                         <outlet property="likeButton" destination="Fc7-C1-Wm3" id="TFS-pm-7hv"/>
@@ -186,7 +197,7 @@
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qt-bx-q3Y" userLabel="Clippling View">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="179"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HUG-Mp-Aqa">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUG-Mp-Aqa">
                                                     <rect key="frame" x="0.0" y="-211" width="600" height="601"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="HUG-Mp-Aqa" secondAttribute="height" multiplier="1:1" id="Ivk-W4-Mmp"/>
@@ -428,9 +439,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="review_view.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="D9O-oo-aHc">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="review_view.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="D9O-oo-aHc">
+                                <rect key="frame" x="87" y="0.0" width="600" height="580"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdg-mJ-7uT">
+                                <rect key="frame" x="166" y="444" width="62" height="70"/>
+                                <state key="normal" title="Tweet" image="twitter_newbird_blue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -493,5 +510,6 @@
         <image name="review_white" width="659" height="562"/>
         <image name="review_yellow" width="667" height="573"/>
         <image name="task_white" width="680" height="606"/>
+        <image name="twitter_newbird_blue" width="300" height="300"/>
     </resources>
 </document>

@@ -60,6 +60,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         println( deviceTokenString )
     }
     
+    
+    
+    
+    
+    
+    
+    
     //RemotePush通知取得関数
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
         
